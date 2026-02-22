@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import { COLORS } from "../constants/colors";
 
 export default function Header({ title, onBack, rightElement, onInfoPress }) {
   return (
@@ -35,14 +36,14 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     paddingHorizontal: 15,
-    backgroundColor: "#fff",
+    backgroundColor: COLORS.white,
+    borderBottomColor: COLORS.divider,
     borderBottomWidth: 1,
-    borderBottomColor: "#EEE",
   },
   headerTitle: {
     fontSize: 18,
     fontWeight: "700",
-    color: "#1A1A1A",
+    color: COLORS.mainText,
   },
   leftContainer: {
     width: 50,
@@ -52,7 +53,7 @@ const styles = StyleSheet.create({
     alignItems: "flex-end",
   },
   backBtn: {
-    color: "#007AFF",
+    color: COLORS.blue,
     fontWeight: "700",
     fontSize: 15,
   },
@@ -64,6 +65,6 @@ const styles = StyleSheet.create({
   },
   infoText: {
     fontSize: 22,
-    color: "#007AFF",
+    color: COLORS.blue,
   },
 });

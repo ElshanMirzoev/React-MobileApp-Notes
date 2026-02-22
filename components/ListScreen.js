@@ -3,6 +3,7 @@ import { StyleSheet, TouchableOpacity, Text, View } from "react-native";
 import Header from "./Header";
 import List from "./List";
 import Info from "./Info";
+import { COLORS } from "../constants/colors";
 
 export default function ListScreen({ notes, onAdd, onEdit, onDelete }) {
   const [isInfoVisible, setIsInfoVisible] = useState(false);
@@ -33,13 +34,13 @@ const styles = StyleSheet.create({
     width: 56,
     height: 56,
     borderRadius: 28,
-    backgroundColor: "#007AFF",
+    backgroundColor: COLORS.blue,
     justifyContent: "center",
     alignItems: "center",
     elevation: 4,
   },
   plusText: {
-    color: "#fff",
+    color: COLORS.white,
     fontSize: 30,
     fontWeight: "300",
   },

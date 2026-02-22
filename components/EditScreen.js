@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, TouchableOpacity, Text, View } from "react-native";
 import Header from "./Header";
 import Editor from "./Editor";
+import { COLORS } from "../constants/colors";
 
 export default function EditScreen({ note, onChange, onSave, onBack }) {
   return (
@@ -25,7 +26,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   doneBtn: {
-    color: "#007AFF",
+    color: COLORS.blue,
     fontWeight: "700",
     fontSize: 15,
   },
